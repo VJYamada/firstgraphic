@@ -12,6 +12,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('importExportView', 'MyController@importExportView');
+
+Route::get('export', 'MyController@export')->name('export');
+
+Route::post('import', 'MyController@import')->name('import');
 
 Route::get('/', function () {
     return view('welcome');

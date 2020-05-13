@@ -61,6 +61,7 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+            {!! Charts::assets() !!};
         </style>
     </head>
     <body>
@@ -78,7 +79,7 @@
                     @endauth
                 </div>
             @endif
-
+            {!! $chart->render() !!};
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
